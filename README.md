@@ -3,12 +3,9 @@ Background: The UCI ML repository has a Taiwanese Bankruptcy Prediction data set
 
 Source: https://archive.ics.uci.edu/ml/datasets/Taiwanese+Bankruptcy+Prediction
 
-Objective: 
-==========
-We will use this data set to train a ML model that predicts company bankruptcies in Taiwan. 
+Objective: We will use this data set to train a ML model that predicts company bankruptcies in Taiwan. 
 
-Methodology:
-============
+# Methodology:
 1) Perform EDA on the 6 basic financial ratios for normal and bankrupt companies.
 2) Perform statistical analysis using Mann-Whitney Test on the following financial ratios for normal and bankrupt companies: Debt Ratio, Current Ratio, Quick Ratio, Net Profit Margin before Tax, Current Liability To Assets, Net Income To Stockholder's Equity.
 3) Perform Chi-Square Contingency Test on categorical feature 'One If Total Liabilities Exceeds Total Assets Zero Otherwise' for normal and bankrupt companies.
@@ -27,8 +24,7 @@ Methodology:
 Technical Skills: 
 - Pandas, Scipy, Seaborn, Matplotlib, statistics test (Mann-Whitney U Test, Chi-Square Contingency Test), Upsampling (imbalanced-learn, SMOTE, ADASYN, SMOTEENN, SMOTETomek), hyperparameter tuning (GridSearchCV), Machine Learning classification modelling. 
 
-Conclusion:
-============
+# Conclusion:
 Out of 4 ML models, Logistic Regression produce the lowest false negative scores of only 7 using SMOTEENN upsampler, however, the F1 score is 0.291339 due to the higher number of false positives (173).
 
 This is followed by GradientBoostingClassifier with second lowest false negative scores of 12 using SMOTEENN upsampler. Its F1 score is 0.397516 and 85 false positives.
@@ -39,12 +35,10 @@ We hereby conclude that, if the model is used for the sole purpose of reducing t
 
 If a financial company is expanding its loan business and the model is to be used as a supplementary risk assessment for loan approvals, the GradientBoostingClassifier model or RandomForestClassifier model would be a better choice due to a much lower number of loan applications that would be flagged wrongly as potentially bankrupt borrowers. 
 
-Ideas for expansion:
-====================
+# Ideas for expanding this work:
 - The same methods can be applied onto similar problem statement such as predicting credit card defaults and personal loan defaults.
 
-Useful Reading:
-===============
+# Useful Reading:
 1) 6 Basic Financial Ratios (https://www.investopedia.com/financial-edge/0910/6-basic-financial-ratios-and-what-they-tell-you.aspx)
 2) Non-parametric tests: Sign test, Wilcoxon signed rank, Mann-Whitney U test (https://www.youtube.com/watch?v=IcLSKko2tsg)
 3) Mann-Whitney U test (https://datatab.net/tutorial/mann-whitney-u-test)
