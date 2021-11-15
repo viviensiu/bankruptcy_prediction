@@ -1,4 +1,4 @@
-# backruptcy_prediction
+# Bankruptcy Prediction
 Background: The UCI ML repository has a Taiwanese Bankruptcy Prediction data set which were collected from the Taiwan Economic Journal for the years 1999 to 2009. Company bankruptcy was defined based on the business regulations of the Taiwan Stock Exchange.
 
 Source: https://archive.ics.uci.edu/ml/datasets/Taiwanese+Bankruptcy+Prediction
@@ -21,7 +21,7 @@ Objective: We will use this data set to train a ML model that predicts company b
 7) Train and predict using models with best parameters.
 8) Evaluate models from Step 7 using F1 scores, confusion matrix and classification report.
 
-Technical Skills: 
+# Required libraries & Technical Skills: 
 - Pandas, Scipy, Seaborn, Matplotlib, statistics test (Mann-Whitney U Test, Chi-Square Contingency Test), Upsampling (imbalanced-learn, SMOTE, ADASYN, SMOTEENN, SMOTETomek), hyperparameter tuning (GridSearchCV), Machine Learning classification modelling. 
 
 # Conclusion:
